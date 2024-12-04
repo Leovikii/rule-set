@@ -11,8 +11,8 @@ env:
   SING_BOX_VERSION: 1.10.3
 
 jobs:
-  sync_and_compile:
-    runs-on: ubuntu-latest
+  compile_srs:
+    runs-on: debian-latest
 
     steps:
     - name: Checkout the repository
