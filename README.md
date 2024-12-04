@@ -1,2 +1,2 @@
 # rule-set
-rule set source file
+compile srs rule set by github action based on self-host json source file
