@@ -12,7 +12,7 @@ env:
 
 jobs:
   compile_srs:
-    runs-on: ubuntu
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout the repository
