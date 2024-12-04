@@ -2,11 +2,9 @@
   "version": 2,
   "rules": [
     {
-      "domain": [
-        "18comic.vip",
-        "18comic.org"
-      ],
       "domain_suffix": [
+        "18comic.vip",
+        "18comic.org",
         "asmr.one",
         "asmr-200.com",
         "kiko-play-niptan.one"
