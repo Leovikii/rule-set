@@ -12,7 +12,7 @@ env:
 
 jobs:
   compile_srs:
-    runs-on: debian-latest
+    runs-on: ubuntu
 
     steps:
     - name: Checkout the repository
