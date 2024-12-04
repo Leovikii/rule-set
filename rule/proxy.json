@@ -4,7 +4,12 @@
     {
       "domain": [
         "18comic.vip",
-        "asmr.one"
+        "18comic.org"
+      ],
+      "domain_suffix": [
+        "asmr.one",
+        "asmr-200.com",
+        "kiko-play-niptan.one"
       ]
     }
   ]
