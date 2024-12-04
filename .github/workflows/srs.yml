@@ -1,4 +1,4 @@
-name: Sync and Compile Sing-Box Rules
+name: Compile Sing-Box Rules
 
 on:
   push:
@@ -33,7 +33,6 @@ jobs:
 
     - name: Compile Sing-Box Rules from ruleset
       run: |
-        git checkout ruleset/master -- sing-box
         mv sing-box/* ./
         rm -rf sing-box sing-box-${SING_BOX_VERSION}-linux-amd64 sing-box.tar.gz
         find . -type f -name "*.srs" -exec rm -f {} \;
