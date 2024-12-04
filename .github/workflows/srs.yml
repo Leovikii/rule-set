@@ -31,8 +31,9 @@ jobs:
         sudo mv sing-box-${SING_BOX_VERSION}-linux-amd64/sing-box /usr/local/bin/sing-box
         sing-box version
 
-    - name: Compile Sing-Box Rules from ruleset
+    - name: Compile Sing-Box Rules
       run: |
+        mv sing-box/* ./
         rm -rf sing-box sing-box-${SING_BOX_VERSION}-linux-amd64 sing-box.tar.gz
         find . -type f -name "*.srs" -exec rm -f {} \;
         find . -type f -name "*.json" -exec bash -c '
