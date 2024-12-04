@@ -2,7 +2,6 @@ name: Sync and Compile Sing-Box Rules
 
 on:
   push:
-  schedule:
   workflow_dispatch:
   
 permissions:
