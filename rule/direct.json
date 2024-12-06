@@ -2,12 +2,8 @@
   "version": 2,
   "rules": [
     {
-      "domain": [
-        "dcg.microsoft.com"
-      ],
-      "domain_suffix": [
-        "leoviki.top"
-      ]
+      "domain": ["dcg.microsoft.com"],
+      "domain_suffix": ["leoviki.top"]
     }
   ]
 }
