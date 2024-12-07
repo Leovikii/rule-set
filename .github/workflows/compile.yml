@@ -5,7 +5,9 @@ on:
     paths:
       - '**/*.json'
   workflow_dispatch:
-
+permissions:
+  contents: write
+  
 jobs:
   compile-and-push-srs:
     runs-on: ubuntu-latest
