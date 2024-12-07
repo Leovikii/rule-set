@@ -1,4 +1,4 @@
-name: Compile SRS Ruleset
+name: Compile and Push SRS Ruleset
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  compile-srs:
+  compile-and-push-srs:
     runs-on: ubuntu-latest
 
     env:
@@ -29,3 +29,11 @@ jobs:
         for file in $(find . -type f -name "*.json"); do
           sing-box rule-set compile --output "${file%.json}.srs" "$file"
         done
+
+    - name: Commit and push compiled SRS files
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add *.srs
+        git commit -m 'Compile and add SRS rulesets'
+        git push
