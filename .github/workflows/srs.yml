@@ -32,6 +32,5 @@ jobs:
         sing-box version
 
     - name: clean up
-      run: |        
-        rm -rf sing-box sing-box-${SING_BOX_VERSION}-linux-amd64 sing-box.tar.gz
+      run: |
         find . -type f -name "*.srs" -exec rm -f {} \;
