@@ -25,6 +25,7 @@ jobs:
 
     - name: clean up
       run: |
+        rm -rf sing-box sing-box-${SING_BOX_VERSION}-linux-amd64 sing-box.tar.gz
         find . -type f -name "*.srs" -exec rm -f {} \;
 
     - name: Install sing-box
@@ -35,3 +36,20 @@ jobs:
         sudo mv sing-box-${SING_BOX_VERSION}-linux-amd64/sing-box /usr/local/bin/sing-box
         sing-box version
 
+    - name: Compile srs
+      run: |
+        find . -type f -name "*.json" -exec bash -c '
+        echo "Compiling: $1"
+        if ! sing-box rule-set compile "$1"; then
+          echo "Error compiling $1"
+          exit 1
+        fi
+        ' _ {} \;
+        git add .
+        if git diff-index --quiet HEAD --; then
+          echo "No changes to commit"
+          echo "No updates needed"
+        else
+          git commit -m "update manually"
+          git push
+        fi
