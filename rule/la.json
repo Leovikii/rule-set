@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain_suffix": [
+        "xda-cdn.com",
+        "xda-developers.com",
+        "xdaforums.com",
+        "xdaimages.com",
+        "archive.org",
+        "ddys.pro"
+      ]
+    }
+  ]
+}
