@@ -3,12 +3,11 @@
   "rules": [
     {
       "domain": [
-        "dcg.microsoft.com",
-        "iwrt.v6.2.1.leoviki.top",
-        "winas.v6.2.2.leoviki.top"
+        "dcg.microsoft.com"
       ],
       "domain_suffix": [
-      "0793wn.com"
+      "0793wn.com",
+      "leoviki.top"
       ]
     }
   ]
