@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      SING_BOX_VERSION: "1.10.3"
+      SING_BOX_VERSION: "1.11.6"
 
     steps:
     - name: Checkout repository
