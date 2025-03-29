@@ -3,10 +3,6 @@
   "rules": [
     {
       "domain_suffix": [
-        "18comic.vip",
-        "asmr.one",
-        "asmr-200.com",
-        "kiko-play-niptan.one",
         "googleapis.cn",
         "deepseek.com"
       ]
